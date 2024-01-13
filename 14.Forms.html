@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name</label> <br>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" id="email"><br>
+        <br>
+        <label for="date">Date</label>
+        <input type="date"><br><br>
+        Genders <br>
+        <input type="radio" name="gender" id=male" checked> <!-- ?Seçili bir şekilde gelmektedir.-->
+        Male
+        <input type="radio" name="gender" id=female">
+        Female
+        <input type="radio" name="gender" id=other">
+        Other
+        <br>
+        Hobbies <br>
+        Sport
+        <input type="checkbox" name="sport" id="sport" checked>
+        Safari
+        <input type="checkbox" name="safari" id="safari">
+        Travel
+        <input type="checkbox" name="travel" id="travel"><br>
+        
+        Degree <br>
+        <select name="degree" id="degree">
+            <option value="bachelor">Lisans</option>
+            <option value="msc">Yüksek Lisans</option>
+            <option value="phd" selected>Doktora</option>
+        </select><br><br>
+
+        <textarea name="message" id="message" placeholder="Your message" cols="30" rows="10"></textarea><br>
+        <button type="reset">Sil</button>
+        <!-- <input type="reset" value="Temizle"> -->
+        <!-- <button type="submit">Gönder</button> -->
+        <input type="submit" value="Submit">
+        </form>
+    
+</body>
+</html>
