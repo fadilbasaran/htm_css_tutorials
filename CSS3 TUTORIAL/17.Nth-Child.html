@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Nth-Child</title>
+    <!-- ? even-çift odd-tek indexler  -->
+    <!-- ? -->
+    <style>
+        p{
+            font-size: 1.5em;
+        }
+        ul{
+            font-size: 1.5em;
+            list-style: none;
+        }
+        /*n=0 b=0 o, 2, 4, 6, 8, 10
+         an + b n=0 b=0
+        */
+        ul li:nth-child(2n){
+            color:aqua;
+        }
+        ul li:nth-child(2n+1){
+            color:red;
+        }
+        ul li:nth-child(n+4){
+            background: black;
+        }
+        /* p:nth-child(2){
+            color:blue;
+        } */
+        /* p:nth-child(even){
+            color:aqua
+        }
+        p:nth-child(odd){
+            color:red
+        } */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+     <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ducimus impedit sint!</p>
+     <p>Quis iusto, blanditiis itaque error unde totam fugit optio architecto explicabo ab.</p>
+     <p>Unde vitae exercitationem consectetur doloribus maiores quisquam ullam, est dolores explicabo non.</p>
+     <p>Unde vitae exercitationem consectetur doloribus maiores quisquam ullam, est dolores explicabo non.</p>
+     <p>Unde vitae exercitationem consectetur doloribus maiores quisquam ullam, est dolores explicabo non.</p>
+     <p>Unde vitae exercitationem consectetur doloribus maiores quisquam ullam, est dolores explicabo non.</p>
+     <p>Unde vitae exercitationem consectetur doloribus maiores quisquam ullam, est dolores explicabo non.</p> -->
+</body>
+</html>
