@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Position</title>
+    <!-- ?position-realtiv bulunduğu yerden başlayarak konumlandırma yapılmaktadır. -->
+    <!-- ? z-index başta tanımlandığında 0 sonrasında değeri artınca üste çıkmaktadır. -->
+    <!-- ? position:absolute verildiğinde out elemets position:static dışında farklı bir şey olmalıdır -->
+   <!-- ? Yoksa out-box göre değil body göre position alır -->
+   
+   
+   <style>
+        span{
+            width: 50px;
+            height: 50px;
+            background: red;
+            display: inline-block;
+            position: relative;
+            left:50px;
+            z-index:-1;
+
+        }
+
+        /* .out-box{
+            width:200px;
+            height: 200px;
+            background: #a7a7a7;
+            position: relative;
+            top:100px;
+            left:100px;
+        }
+        .inner-box{
+            width: 50px;
+            height: 50px;
+            background: blue;
+            position: absolute;
+            top:10px;
+            right:10px;
+        } */
+        /* *{
+            margin: 0;
+            padding: 0;
+        }
+        .red{
+            background: red;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 20px;
+            left:20px;
+        } */
+        /*
+        .blue{
+            background:blue;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 5px;
+            left:5px;
+            z-index: -1;
+        }*/
+            /*Normalde sıfır fakat -1 olduğundan bir geriye gitmektedir*/
+
+        /* .fixed-topbar {
+            background-color: black;
+            color: white;
+            width: 60%;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 20px;
+        } */
+    </style>
+</head>
+
+<body>
+    <span>
+    </span>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, animi.
+    <!-- <div class="red"></div>
+    <div class="blue"> </div> -->
+    <!-- <div class="out-box">
+        <div class="inner-box">
+
+        </div>
+    </div> -->
+</body>
+
+</html>
