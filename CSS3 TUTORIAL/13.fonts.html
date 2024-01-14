@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- ? Birden çok font olmasının asıl sebebi baştan sona doğru olan fontu uygulanacaktır. -->
+    <!-- ? em bulunduğu elementin font-size kadar iken rem ise root(html) elementi kadar  -->
+    <!-- ? % işareti bulunduğu root elementin font-size yüzdesi kadar almaktadır -->
+    <style>
+        /* html{
+            font-size: 24px;
+        }
+        h1{
+            font-family: 'Open Sans', sans-serif;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        } */
+        /* div{
+            font-size: 24px;
+            width: 400px;
+            height: 200px;
+            border:2px solid black;
+        }
+        div span{
+            font-size: 75%;
+        } */
+        p{
+            font-size: 1.5rem;
+            font-style:oblique;
+            font-weight:bold;
+        }
+        h1{
+            font-size: 2em;
+            font-style: oblique;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Başlık</h1>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Fuga, nemo!
+        </p>
+    </div>
+    <!-- <h1>Başlık 1</h1>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cupiditate explicabo maxime voluptatum natus facilis totam, sint esse unde quaerat perferendis sit nostrum tenetur commodi voluptate labore tempora porro sed, accusantium iure modi eos minus! Pariatur distinctio eveniet assumenda. Architecto veniam reprehenderit ab consequuntur at, dignissimos perspiciatis. Necessitatibus, qui blanditiis?
+    </p> -->
+</body>
+</html>
