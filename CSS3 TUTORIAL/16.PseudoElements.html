@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-16.Pseudo Element</title>
+    <style>
+        .para-1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+        .para-1::first-letter{
+            font-size: 2em;
+            color:blue;
+        }
+        /* .para-1::first-line{
+            font-size: 1.8em;
+        } */
+        .para-1::after{
+            content: "Paragraph after line";
+        }
+        .para-1::before{
+            content: "Paragraph before line";
+        }
+    </style>
+</head>
+<body>
+    <p class="para-1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti magnam enim incidunt sapiente quis! A quidem porro qui reprehenderit, rem dicta magni ipsam sit quos officiis repellat dolore excepturi. Aliquid adipisci similique expedita? Consectetur maxime quisquam vel, odit sit dolor quibusdam suscipit illum nulla ad perspiciatis at non voluptates asperiores! Quia accusantium voluptatum iure ratione laboriosam vitae veniam consectetur, exercitationem incidunt officia? Dolorum inventore aspernatur facilis fuga veniam architecto quae, impedit dolor. Cupiditate quasi explicabo impedit reiciendis illo quisquam, cumque nemo. Beatae sapiente modi quo aspernatur dicta facilis doloribus consequuntur accusamus excepturi in, nulla reiciendis nobis doloremque blanditiis vel quas.
+    </p>
+</body>
+</html>
