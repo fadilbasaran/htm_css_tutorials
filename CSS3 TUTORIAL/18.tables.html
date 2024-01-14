@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Tabels</title>
+    <style>
+        table,td,tr,th{
+            border: 2px solid black;
+            border-collapse:collapse;
+        }
+        table{
+            width:75%;
+            margin: 0 auto;
+            font-size: 1.5em;
+        }
+        th,td{
+            padding: 10px;
+        }
+        thead tr{
+            background: green;
+            color:white;
+        }
+        tbody tr{
+            text-align: center;
+        }
+        tbody tr:nth-child(even){
+            background-color: #f4f4f4;
+        }
+        tbody tr:hover{
+            background: #ddd;
+        }
+
+    </style>
+</head>
+
+<body>
+     <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Depertmant</th>
+                <th>Maaş</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilişim</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilişim</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilişim</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilişim</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilişim</td>
+                <td>5000</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>
