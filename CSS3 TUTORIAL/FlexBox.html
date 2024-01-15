@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Flex Box</title>
+    <!-- ? flex-direction:row varsayılan olarak gelir. Satırlarda sıralanırlar. -->
+    <!--? main-axis de sıralamak için justify-content özelliği kullanılır. -->
+    <!-- ? flex-start varsayılandır. Baştan başlayarak dizmeye başlar. flex-end sondan başlayarak dizer.center ise ortadan itibaren dizer.-->
+    <!-- ? space-between ilk ve son çocuğu sağa ve sola yaslar ardınadaki çocuklar arasında eşit miktarda boşluk bırakır.-->
+    <!-- ? space-around ilk ve son çocuk sağına ve soluna eşit miktarda boşluk bırakarak, sonraki çocukların arasına da eşit iki kat boşluk bırakarak sıralar-->
+    <!-- ? space-evenly her taraftan eşit miktarda boşluk bırakarak sıralar. -->
+
+    <!-- ? align-items:stretch: dikey olarak yüksekliğe göre ayarlanırlar -->
+    <!-- ? box-sizing: border-box content alanını daraltarak verilen width ve hegth korur -->
+    <!-- ? flex-wrap:nowrap normalde böyle bir satıa sığdırmaya çalışıyor. ama wrap vediğimizde bir alt satıra geçmektedir. -->
+    <!-- ? min-heigth: minumun yükseklik bu fakat üstüne de çıkılabililir -->
+    <!-- ? align-items flex-direction tam tersi oluyor. Yani flex-direction:column ise satırda, flex-direction:row ise sütunda hizalama yapar. -->
+    <!-- ?order vererek kurulara sıra verilebilir. -->
+    <!-- ? align-self düzene uymaktansa kendi başına bir değer verilir -->
+    <!-- ? flex-grow hangi oranda doldurulacağını seçilebilir. -->
+    <!-- ? iki box da flex:1 verildiğinde alanı eşit bir şekilde paylaşırlar -->
+   <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            width: 75%;
+            margin: 0 auto;
+            min-height: 600px;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            /* justify-content: space-around; */
+            background-color: black;
+        }
+
+        .box {
+            text-align: center;
+            background: #f2f2f2;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .box-1{
+            background: red;
+            /* flex-grow: 2; */
+            
+            
+        }
+        .box-2{
+            flex-grow: 1;
+            background: blue;
+            /* flex-grow: 3; */
+            /* align-self: flex-end;
+            border-radius: 20px 20px 70px 70px; */
+            flex: 1;
+        }
+        .box-3{
+            background: green;
+            /* flex-grow: 5; */
+            flex:1
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+    </div>
+</body>
+
+</html>
