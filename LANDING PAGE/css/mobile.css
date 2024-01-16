@@ -1,0 +1,32 @@
+#navbar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow: hidden;/** Taşma olmasını engellemektedir.*/
+    height: 80px;
+}
+#navbar ul li a{
+    font-size: 1.15rem;
+}
+#navbar h1{
+    font-size: 1.5rem;
+}
+
+#training .items{
+     flex-direction: column;
+}
+#training .items .item{
+    width: 100%;
+}
+#courses{
+    text-align: center;
+}
+
+.courses .course{
+    flex-direction: column;
+}
+.courses .course .course-image span{
+    
+/* * Merte  soru sor burda */
+} 
