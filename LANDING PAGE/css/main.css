@@ -143,3 +143,37 @@ html{
     margin-bottom: 0.25rem;
     opacity: 0.6;
 }
+
+/* * Contact */
+
+#contact {
+    color: #fff;
+    padding: 1rem;
+}
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#contact .contact-form ul{
+
+    list-style: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+    /* align-items: center;
+    justify-content: space-around; */
+}
+#contact .contact-form ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+}
+.contact-form ul li a:hover{
+    /* * merte söyle */
+    font-size: 1rem;
+    opacity: 0.7;
+}
